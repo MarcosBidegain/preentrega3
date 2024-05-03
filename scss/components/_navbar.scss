@@ -1,0 +1,41 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ff0000;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar-collapse {
+            display: flex !important;
+            flex-direction: column;
+            background-color: #ff0000;
+            padding: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+
+            a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            .navbar-toggler {
+                display: block;
+            }
+        }
+    }
+}

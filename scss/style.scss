@@ -1,0 +1,17 @@
+// Archivo: style.scss
+
+// Importaciones de la carpeta 'base'
+@import "base/vars";
+@import "base/reset";
+@import "base/base";
+
+// Importaciones de la carpeta 'components'
+@import "components/navbar";
+@import "components/footer";
+
+// Importaciones de la carpeta 'layout'
+@import "layouts/contact";
+@import "layouts/gallery";
+@import "layouts/index";
+@import "layouts/record";
+@import "layouts/tour";

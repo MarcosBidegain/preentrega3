@@ -1,143 +1,121 @@
+@charset "UTF-8";
 /* Estilos generales */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #888484;
-    color: #ff0000;
-    margin: 0;
-    padding: 0;
-    background-image: url('../multimedia/fondotodo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Estilos para el encabezado */
-.header {
-    background-color: #ff0000;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Estilos para la barra de navegación */
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #ff0000;
-    padding: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar-collapse {
-        display: flex !important;
-        flex-direction: column;
-        background-color: #ff0000;
-        padding: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-    .navbar-collapse a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-
-    .navbar-toggler {
-        display: block;
-    }
-}
-
-/* Contenedor principal */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Galería */
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    margin: 16px;
-}
-
-/* Formulario */
-form {
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* Pie de página */
-footer {
-    background-color: #ff0000;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: #888484;
+  color: #ff0000;
+  margin: 0;
+  padding: 0;
+  background-image: url("../multimedia/fondotodo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Párrafos */
 p {
-    color: #ffffff;
-    margin: 20px 0;
-    text-decoration: none;
+  color: #ffffff;
+  margin: 20px 0;
+  text-decoration: none;
 }
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ff0000;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-collapse {
+    display: flex !important;
+    flex-direction: column;
+    background-color: #ff0000;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .navbar .navbar-collapse a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .navbar .navbar-collapse .navbar-toggler {
+    display: block;
+  }
+}
+
+/* Pie de página */
+footer {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.feralar {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+.feralar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.feralar ul li {
+  color: #eee;
+  font-size: 20px;
+  animation: feralar-animation 2s linear infinite;
+}
+
+@keyframes feralar-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Galería */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
